@@ -12,7 +12,7 @@ a{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url(img/bg1.jpg);
+    background: url(img/bg2.jpg);
     background-size: cover;
 }
 nav{
@@ -72,12 +72,12 @@ nav ul li a:hover:after{
 }
 .content{
     position: absolute;
-    top: 32%;
+    top: 25%;
     left: 8%;
 }
 .content .title{
     color: #3193d4;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
     display: inline-block;

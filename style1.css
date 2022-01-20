@@ -1,40 +1,102 @@
-a {
-    text-decoration: none;
-  }
-  .fa {
-    font-size: 1.2em;
-    line-height: 2em;
-    background: white;
-    border-radius: 2em;
-    height: 2em;
-    width: 2em;
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    left: 10px;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+body{
+  background: url('./img/bg1.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(21, 105, 131, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(150, 24, 133, 0.3);
+}
+
+.wrapper .title h1{
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btn {
+    background: #e01c47;
     text-align: center;
-    color: #C43832;
-  }
-  .phone-number {
-    font-weight: bold;
-    font-size: 20px;
-    text-align: right;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     text-transform: uppercase;
-    font-weight: bold;
-    background: #C43832;
-    border-radius: 34px;
-    padding: 1em;
-    position: relative;
-    padding-left: 3.5em;
-    color: white;
-    display: inline-block;
-    width: 135px;
+    
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
   }
-  .phone-number--below {
-    display: block;
-    text-align: left;
-    padding-left: 3.5em;
+  .msg textarea{
+    height: 80px;
   }
-  .phone-number:hover {
-    background: #1d71b8;
+  .input-fields,
+  .msg{
+    width: 100%;
   }
+}
